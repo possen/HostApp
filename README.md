@@ -4,4 +4,4 @@ This is project which demonstrates that the `Defines Module` flag on the BarKit 
 Use script `./create_xcframework.sh` to create the xcframework 
 
 Note that `BarKit` does not compile when using the `HostAppXC` version which links against the `XCFramework`. 
-Disabling `Defines module` on `BarKit` allows `HostAppXC` to compile and run. 
+Disabling `Defines module`, then regenerating the `XCFramework`, on `BarKit` allows `HostAppXC` to compile and run. 
