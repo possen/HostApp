@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HostApp
+//  HostAppXC
 //
-//  Created by Paul Ossenbruggen on 4/5/20.
+//  Created by Paul Ossenbruggen on 4/6/20.
 //  Copyright © 2020 Paul Ossenbruggen. All rights reserved.
 //
 
@@ -11,9 +11,11 @@ import FooKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         Foo().foo()
+
+        // Override point for customization after application launch.
         return true
     }
 

@@ -3,17 +3,87 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1FEDF9243B1A66001EDF3B /* FooKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC855EA9243B06C5008D64DA /* FooKit.framework */; };
+		DC1FEDFA243B1A66001EDF3B /* FooKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC855EA9243B06C5008D64DA /* FooKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC1FEDFE243B1AF2001EDF3B /* BarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC855EBC243B0F4D008D64DA /* BarKit.framework */; };
+		DC1FEDFF243B1AF2001EDF3B /* BarKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC855EBC243B0F4D008D64DA /* BarKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC1FEE03243B1C2A001EDF3B /* FooKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC855EE3243B1063008D64DA /* FooKit.xcframework */; };
+		DC1FEE04243B1C2A001EDF3B /* FooKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC855EE3243B1063008D64DA /* FooKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DC855E7D243B0651008D64DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC855E7C243B0651008D64DA /* AppDelegate.swift */; };
 		DC855E7F243B0651008D64DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC855E7E243B0651008D64DA /* SceneDelegate.swift */; };
 		DC855E81243B0651008D64DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC855E80243B0651008D64DA /* ViewController.swift */; };
 		DC855E84243B0651008D64DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC855E82243B0651008D64DA /* Main.storyboard */; };
 		DC855E86243B0652008D64DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC855E85243B0652008D64DA /* Assets.xcassets */; };
 		DC855E89243B0652008D64DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC855E87243B0652008D64DA /* LaunchScreen.storyboard */; };
+		DC855EAD243B06C5008D64DA /* FooKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC855EAB243B06C5008D64DA /* FooKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC855EB6243B06E5008D64DA /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC855EB5243B06E5008D64DA /* Foo.swift */; };
+		DC855EC0243B0F4D008D64DA /* BarKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC855EBE243B0F4D008D64DA /* BarKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC855EC9243B0F96008D64DA /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC855EC8243B0F96008D64DA /* Bar.swift */; };
+		DC855ED1243B104E008D64DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC855ED0243B104E008D64DA /* AppDelegate.swift */; };
+		DC855ED3243B104E008D64DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC855ED2243B104E008D64DA /* SceneDelegate.swift */; };
+		DC855ED5243B104E008D64DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC855ED4243B104E008D64DA /* ViewController.swift */; };
+		DC855ED8243B104E008D64DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC855ED6243B104E008D64DA /* Main.storyboard */; };
+		DC855EDA243B1050008D64DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC855ED9243B1050008D64DA /* Assets.xcassets */; };
+		DC855EDD243B1050008D64DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC855EDB243B1050008D64DA /* LaunchScreen.storyboard */; };
+		DC855EF0243B158C008D64DA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DC855EEF243B158C008D64DA /* README.md */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC1FEDFB243B1A66001EDF3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC855E71243B0651008D64DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC855EA8243B06C5008D64DA;
+			remoteInfo = FooKit;
+		};
+		DC1FEE00243B1AF2001EDF3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC855E71243B0651008D64DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC855EBB243B0F4D008D64DA;
+			remoteInfo = BarKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC1FEDFD243B1A66001EDF3B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC1FEDFA243B1A66001EDF3B /* FooKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1FEE02243B1AF2001EDF3B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC1FEDFF243B1AF2001EDF3B /* BarKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1FEE05243B1C2A001EDF3B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC1FEE04243B1C2A001EDF3B /* FooKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DC855E79243B0651008D64DA /* HostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +94,24 @@
 		DC855E85243B0652008D64DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC855E88243B0652008D64DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC855E8A243B0652008D64DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC855EA9243B06C5008D64DA /* FooKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FooKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC855EAB243B06C5008D64DA /* FooKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooKit.h; sourceTree = "<group>"; };
+		DC855EAC243B06C5008D64DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC855EB5243B06E5008D64DA /* Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		DC855EBC243B0F4D008D64DA /* BarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC855EBE243B0F4D008D64DA /* BarKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarKit.h; sourceTree = "<group>"; };
+		DC855EBF243B0F4D008D64DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC855EC8243B0F96008D64DA /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		DC855ECE243B104E008D64DA /* HostAppXC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostAppXC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC855ED0243B104E008D64DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC855ED2243B104E008D64DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC855ED4243B104E008D64DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC855ED7243B104E008D64DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC855ED9243B1050008D64DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC855EDC243B1050008D64DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC855EDE243B1050008D64DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC855EE3243B1063008D64DA /* FooKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FooKit.xcframework; sourceTree = "<group>"; };
+		DC855EEF243B158C008D64DA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +119,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1FEDF9243B1A66001EDF3B /* FooKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC855EA6243B06C5008D64DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1FEDFE243B1AF2001EDF3B /* BarKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC855EB9243B0F4D008D64DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC855ECB243B104E008D64DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1FEE03243B1C2A001EDF3B /* FooKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +152,13 @@
 		DC855E70243B0651008D64DA = {
 			isa = PBXGroup;
 			children = (
+				DC855EEF243B158C008D64DA /* README.md */,
+				DC855ECF243B104E008D64DA /* HostAppXC */,
 				DC855E7B243B0651008D64DA /* HostApp */,
+				DC855EAA243B06C5008D64DA /* FooKit */,
+				DC855EBD243B0F4D008D64DA /* BarKit */,
 				DC855E7A243B0651008D64DA /* Products */,
+				DC855EE2243B1063008D64DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +166,9 @@
 			isa = PBXGroup;
 			children = (
 				DC855E79243B0651008D64DA /* HostApp.app */,
+				DC855EA9243B06C5008D64DA /* FooKit.framework */,
+				DC855EBC243B0F4D008D64DA /* BarKit.framework */,
+				DC855ECE243B104E008D64DA /* HostAppXC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +187,68 @@
 			path = HostApp;
 			sourceTree = "<group>";
 		};
+		DC855EAA243B06C5008D64DA /* FooKit */ = {
+			isa = PBXGroup;
+			children = (
+				DC855EAB243B06C5008D64DA /* FooKit.h */,
+				DC855EAC243B06C5008D64DA /* Info.plist */,
+				DC855EB5243B06E5008D64DA /* Foo.swift */,
+			);
+			path = FooKit;
+			sourceTree = "<group>";
+		};
+		DC855EBD243B0F4D008D64DA /* BarKit */ = {
+			isa = PBXGroup;
+			children = (
+				DC855EBE243B0F4D008D64DA /* BarKit.h */,
+				DC855EBF243B0F4D008D64DA /* Info.plist */,
+				DC855EC8243B0F96008D64DA /* Bar.swift */,
+			);
+			path = BarKit;
+			sourceTree = "<group>";
+		};
+		DC855ECF243B104E008D64DA /* HostAppXC */ = {
+			isa = PBXGroup;
+			children = (
+				DC855ED0243B104E008D64DA /* AppDelegate.swift */,
+				DC855ED2243B104E008D64DA /* SceneDelegate.swift */,
+				DC855ED4243B104E008D64DA /* ViewController.swift */,
+				DC855ED6243B104E008D64DA /* Main.storyboard */,
+				DC855ED9243B1050008D64DA /* Assets.xcassets */,
+				DC855EDB243B1050008D64DA /* LaunchScreen.storyboard */,
+				DC855EDE243B1050008D64DA /* Info.plist */,
+			);
+			path = HostAppXC;
+			sourceTree = "<group>";
+		};
+		DC855EE2243B1063008D64DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC855EE3243B1063008D64DA /* FooKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DC855EA4243B06C5008D64DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC855EAD243B06C5008D64DA /* FooKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC855EB7243B0F4D008D64DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC855EC0243B0F4D008D64DA /* BarKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		DC855E78243B0651008D64DA /* HostApp */ = {
@@ -77,14 +258,72 @@
 				DC855E75243B0651008D64DA /* Sources */,
 				DC855E76243B0651008D64DA /* Frameworks */,
 				DC855E77243B0651008D64DA /* Resources */,
+				DC1FEDFD243B1A66001EDF3B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC1FEDFC243B1A66001EDF3B /* PBXTargetDependency */,
+			);
+			name = HostApp;
+			productName = HostApp;
+			productReference = DC855E79243B0651008D64DA /* HostApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC855EA8243B06C5008D64DA /* FooKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC855EB2243B06C5008D64DA /* Build configuration list for PBXNativeTarget "FooKit" */;
+			buildPhases = (
+				DC855EA4243B06C5008D64DA /* Headers */,
+				DC855EA5243B06C5008D64DA /* Sources */,
+				DC855EA6243B06C5008D64DA /* Frameworks */,
+				DC855EA7243B06C5008D64DA /* Resources */,
+				DC1FEE02243B1AF2001EDF3B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC1FEE01243B1AF2001EDF3B /* PBXTargetDependency */,
+			);
+			name = FooKit;
+			productName = FooKit;
+			productReference = DC855EA9243B06C5008D64DA /* FooKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC855EBB243B0F4D008D64DA /* BarKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC855EC5243B0F4D008D64DA /* Build configuration list for PBXNativeTarget "BarKit" */;
+			buildPhases = (
+				DC855EB7243B0F4D008D64DA /* Headers */,
+				DC855EB8243B0F4D008D64DA /* Sources */,
+				DC855EB9243B0F4D008D64DA /* Frameworks */,
+				DC855EBA243B0F4D008D64DA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HostApp;
-			productName = HostApp;
-			productReference = DC855E79243B0651008D64DA /* HostApp.app */;
+			name = BarKit;
+			productName = BarKit;
+			productReference = DC855EBC243B0F4D008D64DA /* BarKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC855ECD243B104E008D64DA /* HostAppXC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC855EDF243B1050008D64DA /* Build configuration list for PBXNativeTarget "HostAppXC" */;
+			buildPhases = (
+				DC855ECA243B104E008D64DA /* Sources */,
+				DC855ECB243B104E008D64DA /* Frameworks */,
+				DC855ECC243B104E008D64DA /* Resources */,
+				DC1FEE05243B1C2A001EDF3B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HostAppXC;
+			productName = HostAppXC;
+			productReference = DC855ECE243B104E008D64DA /* HostAppXC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,6 +337,16 @@
 				ORGANIZATIONNAME = "Paul Ossenbruggen";
 				TargetAttributes = {
 					DC855E78243B0651008D64DA = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					DC855EA8243B06C5008D64DA = {
+						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+					};
+					DC855EBB243B0F4D008D64DA = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					DC855ECD243B104E008D64DA = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
@@ -116,6 +365,9 @@
 			projectRoot = "";
 			targets = (
 				DC855E78243B0651008D64DA /* HostApp */,
+				DC855ECD243B104E008D64DA /* HostAppXC */,
+				DC855EA8243B06C5008D64DA /* FooKit */,
+				DC855EBB243B0F4D008D64DA /* BarKit */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +380,31 @@
 				DC855E89243B0652008D64DA /* LaunchScreen.storyboard in Resources */,
 				DC855E86243B0652008D64DA /* Assets.xcassets in Resources */,
 				DC855E84243B0651008D64DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC855EA7243B06C5008D64DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC855EF0243B158C008D64DA /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC855EBA243B0F4D008D64DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC855ECC243B104E008D64DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC855EDD243B1050008D64DA /* LaunchScreen.storyboard in Resources */,
+				DC855EDA243B1050008D64DA /* Assets.xcassets in Resources */,
+				DC855ED8243B104E008D64DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +421,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC855EA5243B06C5008D64DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC855EB6243B06E5008D64DA /* Foo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC855EB8243B0F4D008D64DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC855EC9243B0F96008D64DA /* Bar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC855ECA243B104E008D64DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC855ED5243B104E008D64DA /* ViewController.swift in Sources */,
+				DC855ED1243B104E008D64DA /* AppDelegate.swift in Sources */,
+				DC855ED3243B104E008D64DA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC1FEDFC243B1A66001EDF3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC855EA8243B06C5008D64DA /* FooKit */;
+			targetProxy = DC1FEDFB243B1A66001EDF3B /* PBXContainerItemProxy */;
+		};
+		DC1FEE01243B1AF2001EDF3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC855EBB243B0F4D008D64DA /* BarKit */;
+			targetProxy = DC1FEE00243B1AF2001EDF3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC855E82243B0651008D64DA /* Main.storyboard */ = {
@@ -159,6 +475,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				DC855E88243B0652008D64DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DC855ED6243B104E008D64DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC855ED7243B104E008D64DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC855EDB243B1050008D64DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC855EDC243B1050008D64DA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -216,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +602,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +616,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73MXM4S7RY;
 				INFOPLIST_FILE = HostApp/Info.plist;
@@ -302,6 +635,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73MXM4S7RY;
 				INFOPLIST_FILE = HostApp/Info.plist;
@@ -310,6 +644,161 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fff.Log.HostApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC855EB3243B06C5008D64DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 73MXM4S7RY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FooKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fff.Log.FooKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC855EB4243B06C5008D64DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 73MXM4S7RY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FooKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fff.Log.FooKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC855EC6243B0F4D008D64DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73MXM4S7RY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BarKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fff.Log.BarKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC855EC7243B0F4D008D64DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73MXM4S7RY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BarKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fff.Log.BarKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC855EE0243B1050008D64DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73MXM4S7RY;
+				INFOPLIST_FILE = HostAppXC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fff.Log.HostAppXC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC855EE1243B1050008D64DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73MXM4S7RY;
+				INFOPLIST_FILE = HostAppXC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fff.Log.HostAppXC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -333,6 +822,33 @@
 			buildConfigurations = (
 				DC855E8E243B0652008D64DA /* Debug */,
 				DC855E8F243B0652008D64DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC855EB2243B06C5008D64DA /* Build configuration list for PBXNativeTarget "FooKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC855EB3243B06C5008D64DA /* Debug */,
+				DC855EB4243B06C5008D64DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC855EC5243B0F4D008D64DA /* Build configuration list for PBXNativeTarget "BarKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC855EC6243B0F4D008D64DA /* Debug */,
+				DC855EC7243B0F4D008D64DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC855EDF243B1050008D64DA /* Build configuration list for PBXNativeTarget "HostAppXC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC855EE0243B1050008D64DA /* Debug */,
+				DC855EE1243B1050008D64DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
