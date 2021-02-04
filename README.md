@@ -1,3 +1,4 @@
+Update: Xcode 12 has a fix that allows this project to work as expected. 
 
 This is project which demonstrates that the `Defines Module` flag on the BarKit target does not allow `swiftinterface` files to be generated. 
 `FooKit` has it enabled and they are generated. 
